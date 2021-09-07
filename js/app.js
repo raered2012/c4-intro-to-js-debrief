@@ -6,10 +6,24 @@
 // If value of myNumber is a multiple of 5 print 'Buzz' to the console
 // If the value of myNumber is a multiple of both 3 and 5 (ex. 15) print GenBuzz to the console
 // If the value of myNumber is any other number print the value of myNumber to the console.
-// Reference Codecademy lessons: Introduction- Arithmetic Opertaors, Conditional Statements lessons 3, 4, 5,and 9
+// Reference Codecademy lessons: Introduction- Arithmetic Operators, Conditional Statements lessons 3, 4, 5,and 9
 
 //Write your code for GenBuzz below this line:
+let myNumber = 2;
 
+console.log(typeof myNumber);
+
+if (myNumber !== 'number') {
+  console.log('This is not a number');
+} else if (myNumber % 3 === 0) {
+  console.log('Gen');
+} else if(myNumber % 5 === 0) {
+  console.log('Buzz');
+} else if (myNumber % 3 && myNumber % 5 === 0) {
+  console.log('GenBuzz');
+} else {
+  console.log(myNumber);
+}
 
 
 
@@ -28,7 +42,24 @@
 // If the variable input is not an item in the store, then print 'Invalid Item' to the console.
 
 //Write your code for the E-Commerce item list below this line:
+let storeItem = 'Shoes';
 
+switch (storeItem)
+case 'Shoes':
+  console.log('Shoes are $50.')
+  break;
+case 'Jeans': 
+  console.log('Jeans are $25.')
+  break;
+case 'Hat':
+  console.log('Hats are $12.')
+  break;
+case 'Socks':
+    console.log('Socks are $2.')
+    break;
+default: 
+  console.log('Invalid Item')
+  break;
 
 
 
@@ -36,6 +67,6 @@
 // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 //Write your code below this line:
-
+Math.floor(Math.random() * 100);
 
 
